@@ -4,6 +4,7 @@ export const colors = {
   grayOpacity: '#85858520',
   darkblue: '#7ec5e7',
   black: 'black',
+  transparentBlack: '#00000099',
   white: 'white',
   lightblue: 'lightblue',
   yellow: '#FEF04D',

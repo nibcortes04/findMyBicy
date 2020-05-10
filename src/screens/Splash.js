@@ -11,21 +11,19 @@ import {
   SafeAreaView,
 } from 'react-native';
 
-import {colors} from './colors';
+import {colors} from '../../colors';
 
 const Splash = ({navigation}) => {
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.navigate('Welcome');
+      navigation.navigate('Login');
     }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <View style={styles.container}>
-      {/* <Image
-        style={styles.logo}
-        source={require('../records/logo.png')}></Image> */}
+      <Image style={styles.logo} source={require('../records/logo.png')} />
     </View>
   );
 };

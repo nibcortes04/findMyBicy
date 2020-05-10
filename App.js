@@ -11,8 +11,9 @@ import {
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import Splash from './Splash';
-import Welcome from './Welcome';
+import Splash from './src/screens/Splash';
+import Login from './src/screens/Login';
+import Register from './src/screens/Register';
 
 const Stack = createStackNavigator();
 const screenOptions = {
@@ -28,9 +29,10 @@ const App: () => React$Node = () => {
           component={Splash}
           options={screenOptions}
         />
+        <Stack.Screen name="Login" component={Login} options={screenOptions} />
         <Stack.Screen
-          name="Welcome"
-          component={Welcome}
+          name="Register"
+          component={Register}
           options={screenOptions}
         />
       </Stack.Navigator>
